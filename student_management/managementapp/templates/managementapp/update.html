@@ -1,0 +1,76 @@
+{% extends "managementapp/master.html"%}
+{% load static%}
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+
+ <div style="height: 1000px;width: 500px;margin-left: 400px;background-image: url(https://c0.wallpaperflare.com/preview/698/843/707/ireland-dublin-trinity-college-culture.jpg);background-repeat: no-repeat;">
+    <div style="height: 100px;width: 500px;text-align: center;">
+        <h2 style="color: rgb(201, 201, 244);font-family: arial narrow bold;">Registration Form</h2>
+        <hr>
+
+    </div>
+
+    <div style="height: 900px;width: 500px;;color: white;">
+        <div style="margin-left: 120px;">
+            <form action="" method="post">
+                {% csrf_token %}
+                <span>
+                    <h5>Name : </h5><input type="text" name="name" id="" value="{{data2.name}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>City : </h5><input type="text" name="city" id="" value="{{data2.city}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>Percentage : </h5><input type="number" name="percentage" id="" value="{{data2.percentage}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>Mobile No : </h5><input type="text" name="contact" id="" value="{{data2.contact}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>Email id : </h5><input type="text" name="email" id="" value="{{data2.email}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>College : </h5><input type="text" name="clg" id="" value="{{data2.college}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>Degree : </h5><input type="text" name="degree" id="" value="{{data2.degree}}">
+                </span>
+                <hr>
+
+                <span>
+                    <h5>Passing Year : </h5><input type="text" name="year" id="" value="{{data2.year}}">
+                </span>
+                <hr>
+
+                <span><h5> Course : </h5>
+                    <select name="course" id="" value="{{data2.course}}">
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="selenium">Selenium</option>
+                    </select>
+                </span>
+                <hr>
+                <button type="submit">Update</button>
+                <button type="button"><a href="/delete/{{data2.id}}">Delete</a></button>
+            </form>
+        </div>
+
+    </div>
+ </div>
+
+{% endblock %}

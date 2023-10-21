@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document
+
+        {% block title%}
+
+        {% endblock%}
+    </title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="width: 1350px;">
+        <a class="navbar-brand" href="#"><h1><span style="color: orange;">The</span><span style="color: white;">Kiran</span><span style="color: green;">Academy</span></h1></a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="/display/">Display</a>
+            <a class="nav-item nav-link active" href="/addmission/">Addmission</a>
+            <a class="nav-item nav-link active" href="/admin/">Admin</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <div class="jumbotron" style="width: 1350px;">
+
+        {% block content%}
+
+        {% endblock%}
+
+      </div>
+      <br><br>
+
+<div style="width:1350px;height:310px;background-color:rgb(92, 199, 194);text-align:center;margin: 0cm -0.8cm 0cm;">
+
+  <div style="width:675px;height:310px;float: left;">
+    <h3><span style="font-family:Arial Narrow Bold;">The Kiran Academy</span></h3>
+    <hr>
+    <h6> Karve Nagar Main Branch</h6>
+    <hr>
+    <h6>Contact No: 6556457364</h6>
+    <hr>
+    <h6>Email Id: thekiranacademy@gmail.com</h6>
+    <hr>
+    <h6>facbook Account: @TheKiranAcademy</h6>
+    <hr>
+    <h6>Instagram Id: TheKiranAcademy@123</h6>
+
+
+  </div>
+
+  <div style="width:675px;height:310px;float: left;">
+    <h3><span style="font-family:Arial Narrow Bold;">Branches In Pune</span></h3>
+    <hr>
+    <h6> Karve Nagar  Branch</h6>
+    <hr>
+    <h6> Shivaji Nagar Branch</h6>
+    <hr>
+    <h6> Deccan Branch</h6>
+    <hr>
+    <h6> Pimpari Chinchwad Branch</h6>
+    <hr>
+    <h6> Warje  Branch</h6>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
